@@ -4,10 +4,12 @@ body, html{
   font-size: 18px;
   /* font-weight: 400; */
   font-family: 'Kumbh Sans', sans-serif;
+  overflow: hidden;
 }
 
 html {
   box-sizing: border-box;
+  overflow: hidden;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -28,6 +30,13 @@ html {
   transform: translate(-500px, -500px);
 }
 
+.main-container #svg-bottom{
+  position: absolute;
+  z-index: 0;
+  transform: translate(500px, 500px);
+  /* body needs to be set overflow: hidden for this svg to work */
+}
+
 
 
 .card-container{
@@ -38,6 +47,7 @@ html {
   display: flex;
   flex-direction: column;
   z-index: 100;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 
