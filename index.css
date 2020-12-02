@@ -58,6 +58,13 @@ html {
 
 @media (min-width: 1000px) {
   .card-container{
+    width: 30vw;
+    height: 45vh;
+  }
+} 
+
+@media (min-width: 1400px) {
+  .card-container{
     width: 20vw;
     height: 45vh;
   }
